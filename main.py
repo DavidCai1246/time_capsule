@@ -7,9 +7,9 @@ def send_email(subject, msg):
         server = smtplib.SMTP('smtp.gmail.com:587')
         server.ehlo()
         server.starttls()
-        server.login("dimsum1246@gmail.com", "dugganschool4321")
+        server.login("xxx@gmail.com", "xxx")
         message = 'Subject:{}\n\n{}'.format(subject, msg)
-        server.sendmail("dimsum1246@gmail.com", "dimsum1246@gmail.com", message)
+        server.sendmail("xxx@gmail.com", "xxx@gmail.com", message)
         server.quit()
         print("Success")
     except:
